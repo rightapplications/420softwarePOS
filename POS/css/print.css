@@ -1,0 +1,20 @@
+@media print  {
+    html,body{margin:0;padding: 0}
+    header{display:none}
+    aside{display:none}
+    footer{display:none}
+    section{width:100%;float:none;margin:0;padding:0}
+    .checkou-block{display:none}
+    .content-wrapper{
+        margin:0;
+        padding: 0;
+        float:none;
+        clear:both;
+        display:block;
+        width:100%!important;
+        margin:0!important;
+        padding:0!important
+    }
+    table td span{font-size: 11px!important}
+
+}

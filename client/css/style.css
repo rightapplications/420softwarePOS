@@ -1,0 +1,347 @@
+.content-wrapper{
+    margin-left:0;
+}
+.invitation{
+    padding-top: 300px;
+    text-align: center;
+}
+
+#orderDetails .content{
+    padding-right:45px;
+}
+
+.table-2 table{max-width: 100%;}
+
+.table-2 table td{font-size:16px}
+
+
+
+* {
+  margin:0;
+  padding:0;
+}
+html,
+body{
+  height:100%;
+}
+.yourorder-page{	
+  position:relative;
+  min-height:100%;
+}
+.yourorder-content{
+	padding-bottom:70px;
+}
+.yourorder-footer{
+	position: absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	background-color:#6da35d;
+	min-height:70px;
+}
+.yourorder-filling{
+	margin:0 auto;
+	margin-bottom:40px;
+	padding:0 30px;
+	max-width:1300px;
+}
+
+@font-face {
+	font-family: 'Conv_Galano Grotesque Alt Black';
+	src: url('../fonts/Galano Grotesque Alt Black.eot');
+	src: local('☺'), url('../fonts/Galano Grotesque Alt Black.woff') format('woff'), url('../fonts/Galano Grotesque Alt Black.ttf') format('truetype'), url('../fonts/Galano Grotesque Alt Black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Galano Grotesque Alt Heavy';
+	src: url('../fonts/Galano Grotesque Alt Heavy.eot');
+	src: local('☺'), url('../fonts/Galano Grotesque Alt Heavy.woff') format('woff'), url('../fonts/Galano Grotesque Alt Heavy.ttf') format('truetype'), url('../fonts/Galano Grotesque Alt Heavy.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Galano Grotesque Alt Bold';
+	src: url('../fonts/Galano Grotesque Alt Bold.eot');
+	src: local('☺'), url('../fonts/Galano Grotesque Alt Bold.woff') format('woff'), url('../fonts/Galano Grotesque Alt Bold.ttf') format('truetype'), url('../fonts/Galano Grotesque Alt Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Galano Grotesque Alt Medium';
+	src: url('../fonts/Galano Grotesque Alt Medium.eot');
+	src: local('☺'), url('../fonts/Galano Grotesque Alt Medium.woff') format('woff'), url('../fonts/Galano Grotesque Alt Medium.ttf') format('truetype'), url('../fonts/Galano Grotesque Alt Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after { clear: both; }
+
+/* start yourorder-header
+------------------------------------------------- */
+.yourorder-header{
+	background-color:#eee;
+	text-align:center;
+	height:95px;
+}
+.yourorder-header span{
+	font-family: 'Conv_Galano Grotesque Alt Black';
+	color:#000;
+	font-size:32px;
+	line-height:normal;
+	position:relative;
+	top:17px;
+}
+/* stop yourorder-header
+------------------------------------------------- */
+
+/* start yourorder-tableblock
+------------------------------------------------- */
+.yourorder-tableblock{
+    width: 100%;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.yourorder-tableblock table{
+	border-spacing: 0;
+	border-collapse: collapse;
+	padding:0;
+	margin:0 0 17px 0;
+	width: 100%;
+	max-width: 100%;
+}
+.yourorder-tableblock table td,
+.yourorder-tableblock table th{
+	color:#000;
+	text-align:center;
+	vertical-align:middle;
+
+}
+.yourorder-tableblock table th{
+	padding:17px 15px 25px 15px;
+
+}
+.yourorder-tableblock table{
+	border-bottom:4px solid #ccc;
+}
+.yourorder-tableblock table th{
+	font-family: 'Conv_Galano Grotesque Alt Heavy';
+	font-size:23px;
+	line-height:normal;
+	border-bottom:4px solid #ccc;
+}
+.yourorder-tableblock table td{
+	padding:6px 15px 11px 15px;
+	border-top:2px solid #e5e5e5;
+	font-size:32px;
+	font-family: 'Conv_Galano Grotesque Alt Medium';
+}
+.yourorder-tableblock table td.td-namber{
+	font-family: 'Conv_Galano Grotesque Alt Heavy';
+	font-size:28px;
+	color:#686868;
+}
+.yourorder-tableblock table td.td-icon{
+	text-align:left;
+}
+.yourorder-tableblock table td.td-icon img{
+	position:relative;
+	top:0px;
+}
+.yourorder-tableblock table td.td-product-name{
+	color:#6da35d;
+}
+.discount{
+	color:#6da35d;
+	font-family: 'Conv_Galano Grotesque Alt Heavy';
+	text-transform:uppercase;
+	display:table;
+	width:auto;
+	float:right;
+}
+.discount span,
+.discount font{
+	display:table-cell;
+	width:auto;
+	vertical-align:middle;
+}
+.discount span{
+	padding-right:10px;
+}
+.discount font{
+	background-color:#6da35d;
+	color:#fff;
+	padding:3px 10px 10px 10px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	position:relative;
+	top:4px;
+}
+/* stop yourorder-tableblock
+------------------------------------------------- */
+
+/* start entire-order-discount + table
+------------------------------------------------- */
+.entireorderdiscount{
+	float:right;
+}
+.entire-order-discount{
+	float:right;
+	background-color:#6da35d;
+	color:#fff;
+	font-size:28px;
+	font-family: 'Conv_Galano Grotesque Alt Medium';
+	text-transform:uppercase;
+	border:2px solid #4f7743;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding:2px 30px 6px 30px;
+	margin:0 0 17px 0;
+}
+.entire-order-discount font{
+	font-family: 'Conv_Galano Grotesque Alt Heavy';
+	padding-left:20px;
+}
+
+
+
+
+.sum-block{
+	border:4px solid #6da35d;
+	text-transform:uppercase;
+	color:#000;
+	font-family: 'Conv_Galano Grotesque Alt Medium';
+	font-size:18px;
+        min-width: 526px;
+}
+.sumblock-title{
+	background:#fff url(../images/yourorder-separator.png) repeat-x 0 38px;
+}
+.sumblock-content{
+	background:#eee url(../images/yourorder-separator.png) repeat-x 0 42px;
+	border-top:2px solid #e4e4e4;
+}
+.sumblock-conten-blocks .sumblock-content:first-child{
+	border-top:none;
+}
+.sumblock-title span,
+.sumblock-content span,
+.sumblock-title font,
+.sumblock-content font{
+	width:auto
+}
+.sumblock-title span,
+.sumblock-content span{
+	float:left;
+}
+.sumblock-title font,
+.sumblock-content font{
+	float:right;
+}
+
+.sumblock-title span,
+.sumblock-title font{
+	background-color:#fff;
+	font-family: 'Conv_Galano Grotesque Alt Heavy';
+	font-size:30px;
+	padding-bottom:10px;
+	padding-top:4px;
+}
+.sumblock-title span{
+	color:#000;
+	padding-left:15px;
+}
+.sumblock-title font{
+	padding-right:15px;
+}
+.sumblock-content span,
+.sumblock-content font{
+	background-color:#eee;
+	padding-bottom:14px;
+	padding-top:11px;
+        font-size:28px;
+}
+
+.sumblock-content span{
+	padding-left:15px;
+}
+.sumblock-content font{
+	padding-right:15px;
+}
+
+.entireorderdiscount-table table{
+	border:2px solid #eee;
+	border-spacing: 0;
+	border-collapse: collapse;
+	padding:0;
+	margin:0;
+	width:100%;
+	text-transform:uppercase;
+	color:#000;
+	font-family: 'Conv_Galano Grotesque Alt Medium';
+}
+.entireorderdiscount-table table th,
+.entireorderdiscount-table table td{
+	padding:0 15px 0 15px;
+}
+.entireorderdiscount-table table th{
+	font-family: 'Conv_Galano Grotesque Alt Heavy';
+	font-size:24px;
+	padding-bottom:10px;
+	padding-top:4px;
+}
+.entireorderdiscount-table table th:first-child{
+	color:#686868;
+}
+.entireorderdiscount-table table th:first-child,
+.entireorderdiscount-table table td:first-child{
+	text-align:left;
+}
+.entireorderdiscount-table table th:last-child,
+.entireorderdiscount-table table td:last-child{
+	text-align:right;
+}
+.entireorderdiscount-table table td{
+	background-color:#eee;
+	border-bottom:2px solid #e4e4e4;
+	padding-bottom:14px;
+	padding-top:11px;
+}
+.entireorderdiscount-table table tr:last-child td{
+	border-bottom:none;
+}
+/* start entire-order-discount + table
+------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

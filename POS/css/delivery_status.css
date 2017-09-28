@@ -1,0 +1,196 @@
+body {
+	position: relative;
+	min-height: 100%;
+}
+header {
+	box-sizing: border-box;
+	height: 61px;
+	margin-bottom: -61px;
+	padding-top: 13px;
+	background: url("../images/header_bg.jpg") center/cover;
+	text-align: center;
+}
+footer {
+	margin-top: -50px;
+}
+.delivery_page {
+	box-sizing: border-box;
+	min-height: 100%;
+	padding: 61px 0 50px;
+	font-family: 'Questrial', sans-serif;
+}
+#delivery_map {
+	width: 100%;
+	height: 360px;
+}
+.delivery_info {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 60px 5% 20px 5%;
+	color: #000;
+}
+.driver_data {
+	float: left;
+	width: 28%;
+	min-width: 200px;
+}
+.driver_data .driver_img{
+	display: block;
+	width: 160px;
+	height: 180px;
+	margin-bottom: 9px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.driver_data .name {
+	font-size: 30px;
+}
+.right {
+	margin-left: 30%;
+	margin-bottom: 12px;
+}
+@media (max-width: 795px) {
+	.right {
+		margin-left: 200px;
+	}
+}
+@media (max-width: 600px) {
+	.driver_data{
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.driver_data .driver_img{
+	    margin: 0 auto 9px;
+	}
+	.right {
+		margin-left: 0;
+	}
+}
+.messages {
+	height: 180px;
+	margin-bottom: 10px;
+	padding: 14px 12px;
+	border: 1px solid #65b177;
+	overflow: auto;
+}
+.message {
+	margin-bottom: 7px;
+}
+.message.patient{
+	color: #0011ea;
+}
+.message.driver{
+	margin-left: 10px;
+}
+.message span {
+	line-height: 15px;
+}
+.message .time {
+	float: left
+}
+.message .text {
+	display: block;
+	margin-left: 38px;
+	padding: 0 4px;
+	border-radius: 2px;
+	background: #ebebeb;
+}
+.driver .message {
+	border: 1px solid #3465a4;
+	background: #729fcf;
+}
+.patient .message {
+	border: 1px solid #4e8f3e;
+	background: #579d1c;
+}
+.new_message {
+	position: relative;
+	width: 100%;
+	margin-bottom: 12px;
+	border: 1px solid #65b177;
+}
+.new_message input {
+	width: 100%;
+	height: 28px;
+	padding: 0 12px;
+	border: none;
+}
+.new_message button {
+	position: absolute;
+	top: 2px;
+	right: 11px;
+	height: 26px;
+	width: 26px;
+	border: none;
+	background: url("../images/send_btn.png") center/contain;
+}
+.delivery_time {
+	font-size: 18px;
+	text-align: right;
+}
+.delivery_review {
+	max-width: 700px;
+}
+.delivery_message {
+	margin-top: -9px;
+	margin-bottom: 18px;
+	line-height: 30px;
+	font-size: 30px;
+}
+.review textarea{
+	border: 1px solid green;
+	width: 100%;
+	height: 90px;
+	margin-bottom: 4px;
+	padding: 10px;
+}
+.review button{
+	float: right;
+	background: green;
+	border: none;
+	color: #fff;
+	padding: 6px 21px;
+	font-size: 18px;
+	line-height: 19px;
+	border-radius: 3px;
+}
+.delivery_request {
+	margin-top: 10px;
+	line-height: 24px;
+	font-size: 24px;
+}
+.stars {
+	margin-bottom: 8px;
+	unicode-bidi: bidi-override;
+	direction: rtl;
+	text-align: left;
+}
+.stars > label {
+	display: inline-block;
+	position: relative;
+	width: 33px;
+	height: 31px;
+	margin-right: 7px;
+	background: url("../images/star.png") center/contain;
+}
+.stars > label:hover,
+.stars > label:hover ~ label,
+.stars > input[type="radio"]:checked + label,
+.stars > input[type="radio"]:checked + label ~ label {
+	background: url("../images/star-full.png") center/contain;
+}
+.stars input {
+	display: none;
+}
+.success {
+	margin-top: 100px;
+	text-align: center;
+}
+.success .message {
+	display: inline-block;
+	padding: 30px;
+	border: 1px solid #65b177;
+	border-radius: 5px;
+	font-size: 18px;
+}

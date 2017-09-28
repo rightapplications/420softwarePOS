@@ -1,0 +1,174 @@
+.dev_groups_page {
+	display: table;
+	width: 100%;
+}
+.dev_groups_page .col{
+	display: table-cell;
+	vertical-align: top;
+	width: 50%;
+	padding: 10px;
+}
+.delivery_base {
+	display: table;
+	width: 100%;
+}
+.delivery_base > div{
+	display: table-cell;
+}
+.delivery_base .td_min{
+	width: 1px;
+	white-space: nowrap;
+}
+.delivery_base .td_input{
+	padding: 0 10px;
+}
+.delivery_base #delivery_base{
+	width: 100%;
+	padding: 0 5px;
+}
+#delivery_map{
+	height: 400px;
+	margin-bottom: 10px;
+}
+.group {
+	position: relative;
+	overflow-y: auto;
+	margin: 10px 0;
+	padding: 0 28px 18px 0;
+	border: 1px solid #4c984e;
+}
+.group.uneditable:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #000;
+	opacity: 0.2;
+	z-index: 2;
+}
+.orders {
+	overflow: auto;
+}
+.orders.col {
+	border-left: 1px solid #4c984e;
+}
+.group .orders {
+	min-height: 100px;
+}
+.order {
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	margin: 5px;
+	padding: 0 10px 5px;
+	border: 1px solid #4c984e;
+	cursor: pointer;
+}
+.order.highlight{
+	box-shadow: 1px 1px 1px 0 #008000;
+}
+.order .id{
+	border-bottom: 1px solid #4c984e;
+	color: #244626;
+	font-weight: bold;
+}
+.order .directions{
+	text-align: right;
+}
+.group .order{
+	display: block;
+	width: auto;
+}
+.group .order .id{
+	margin-bottom: 5px;
+}
+.group_approve,
+.group_cancel,
+.group_payed {
+	position: absolute;
+	right: 0;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+.group_approve {
+	top: 28px;
+	background: url('../images/send_btn.png') center/contain;
+}
+.group_cancel {
+	top: 3px;
+	background: url('../images/close_btn.png') center/contain;
+	z-index: 3;
+}
+.group_payed {
+	top: 28px;
+	background: url('../images/coin_btn.png') center/contain;
+	z-index: 3;
+}
+.group_status,
+.group_driver {
+	position: absolute;
+	bottom: 0;
+}
+.group_status {
+	left: 5px;
+}
+.group_driver {
+	right: 5px;
+}
+.map_img {
+	max-width: 100px;
+	max-height: 100px;
+	margin-right: 10px;
+}
+.map_driver {
+	display: inline-block;
+}
+.group_directions {
+	margin: 10px;
+    padding: 10px;
+    border: 1px solid #4c984e;
+}
+
+/*mobile version*/
+.dev_groups_page.mobile {
+	display: block;
+}
+.mobile .col {
+	display: block;
+	width: 100%;
+}
+.group-sel {
+	position: relative;
+	display: none;
+	width: 100%;
+	height: 40px;
+	margin: 10px 0 5px;
+	border: 1px solid #808080;
+	overflow: visible;
+	text-align: center;
+}
+.group-sel:before {
+	content: 'tap to assign/change group';
+	line-height: 40px;
+}
+.mobile .group-sel {
+	display: block;
+}
+.group-sel .select {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	display: none;
+	border: 1px solid #808080;
+}
+.group-sel.open .select {
+	display: block;
+}
+.group-sel .select > div {
+	width: 100%;
+	height: 40px;
+}

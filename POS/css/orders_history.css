@@ -1,0 +1,20 @@
+.orders_history {
+	clear: both;
+}
+.orders_history .order {
+	display: inline-block;
+	vertical-align: top;
+	width: 500px;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #51c553;
+}
+.order .id {
+	margin-bottom: 5px;
+	border-bottom: 1px solid #51c553;
+}
+@media (max-width: 768px) {
+	.orders_history .order {
+		width: 100%;
+	}
+}
